@@ -116,7 +116,7 @@ public class CharacterAPIController {
     public ResponseEntity<Collection<Character>> searchByRegion(@RequestParam(required = false)String region){
         List<Character> characters;
         if (region!= null){
-            characters = characterService.getCharacterByRegion(region);
+            characters = characterService.getCharactersByRegion(region);
             if (characters == null) return ResponseEntity.notFound().build();
         } else {
             characters = characterService.getAllCharactersSortedByRegion();
@@ -135,7 +135,7 @@ public class CharacterAPIController {
     public ResponseEntity<Collection<Character>> searchByRole(@RequestParam(required = false)String role){
         List<Character> characters;
         if (role!= null){
-            characters = characterService.getCharacterByRole(role);
+            characters = characterService.getCharactersByRole(role);
             if (characters == null) return ResponseEntity.notFound().build();
         } else {
             characters = characterService.getAllCharactersSortedByRole();
@@ -157,7 +157,7 @@ public class CharacterAPIController {
     public ResponseEntity<Collection<Character>> searchByName(@RequestParam(required = false) String name){
         List<Character> characters;
         if (name != null){
-            characters = characterService.getCharacterByName(name);
+            characters = characterService.getCharactersByName(name);
         } else {
             characters = characterService.getAllCharacters();
         }

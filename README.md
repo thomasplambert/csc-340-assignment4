@@ -4,10 +4,7 @@
 
 ## Table of Contents
 
-- [Installation & Setup](#installation--setup)
-- [Running the Application](#running-the-application)
 - [API Endpoints](#api-endpoints)
-- [Demo Video](#demo-video)
 
 ---
 
@@ -241,7 +238,86 @@ GET /api/characters/search?name={name}
 ```
 
 ---
+## WEB UI Routes
 
-## Demo Video
+The application also provides a web interface for user interaction. All web routes use the base URL: 
+`http://localhost:8080/api/characters`
 
-[Assignment03-recording.mov](https://uncg-my.sharepoint.com/:v:/g/personal/tplambert_uncg_edu/IQAA9GFxJ073RpiPmQ1VmtP5AUsDTjf-GoUDF1U8HX-3pC0?e=UDKcGG&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+### 1. View all characters
+```html
+
+```
+**Description**: Display a list of all characters in a webpage.
+**Response**: HTML page showing the character list
+
+### 2. View Character Details
+```html
+
+```
+**Description**: Display detailed information for a specific character.
+**Path Parameters**: `id` (Long, required) — the unique ID of the character
+**Response**: HTML page with character details (or an error page if id not found)
+
+### 3. Add New Character Form
+```html
+
+```
+**Description**: 
+**Response**:
+
+### 4. Create Character
+```html
+
+```
+**Description**: 
+**Response**:
+
+### 5. Update Character
+```html
+
+```
+**Description**: 
+**Response**:
+
+### 6. Delete Character
+```html
+
+```
+**Description**: 
+**Response**:
+
+### 7. Search Students
+```html
+
+```
+**Description**: 
+**Response**:
+
+### 8. Filter by Region
+```html
+
+```
+**Description**: 
+**Response**:
+
+### 9. Filter by Role 
+```html
+
+```
+**Description**: 
+**Response**:
+
+### 10. Filter by Name
+```html
+
+```
+**Description**: 
+**Response**:
+
+### 11. Filter by Name
+```html
+
+```
+**Description**: 
+**Response**:
+---
