@@ -41,15 +41,15 @@ public class CharacterService {
         return characterRepository.findById(id).orElse(null);
     }
 
-    public List<Character> getCharacterByName(String name){
+    public List<Character> getCharactersByName(String name){
         return characterRepository.findByNameContainingIgnoreCase(name);
     }
 
-    public List<Character> getCharacterByRegion(String region){
+    public List<Character> getCharactersByRegion(String region){
         return characterRepository.findByRegionContainingIgnoreCase(region);
     }
 
-    public List<Character> getCharacterByRole(String role){
+    public List<Character> getCharactersByRole(String role){
         return characterRepository.findByRole(role);
     }
     

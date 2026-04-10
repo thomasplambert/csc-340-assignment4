@@ -1,0 +1,353 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ 
+body {
+  background: #f5f5f5;
+  color: #111;
+}
+ 
+/*  Nav Bar */
+nav {
+  background: #111;
+  color: #fff;
+  padding: 12px 24px;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+ 
+nav .site-title {
+  font-weight: bold;
+  font-size: 16px;
+  margin-right: auto;
+}
+ 
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+ 
+nav a:hover {
+  text-decoration: underline;
+}
+ 
+/*  Page wrapper  */
+.page-wrapper {
+  max-width: 860px;
+  margin: 40px auto;
+  padding: 0 24px;
+}
+ 
+/*  Page header  */
+.page-header {
+  padding: 32px 24px 16px;
+  border-bottom: 2px solid #111;
+}
+ 
+.page-header h1 {
+  font-size: 26px;
+}
+ 
+.page-header p {
+  font-size: 13px;
+  color: #555;
+  margin-top: 6px;
+}
+ 
+/*  Search bar  */
+.controls {
+  padding: 16px 24px;
+  border-bottom: 1px solid #ccc;
+}
+ 
+.controls input {
+  font-size: 13px;
+  padding: 6px 10px;
+  border: 1px solid #999;
+  background: #fff;
+  width: 280px;
+}
+ 
+/*  Gallery grid  */
+.gallery {
+  padding: 24px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+ 
+/*  Card stuff */
+.card {
+  background: #fff;
+  border: 1px solid #aaa;
+  display: flex;
+  flex-direction: column;
+}
+ 
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+  border-bottom: 1px solid #aaa;
+}
+ 
+.card-body {
+  padding: 12px;
+  flex: 1;
+}
+ 
+.card-body h2 {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+ 
+.card-body .role {
+  font-size: 11px;
+  color: #666;
+  display: block;
+  margin-bottom: 6px;
+}
+ 
+.card-body p {
+  font-size: 12px;
+  color: #444;
+  line-height: 1.5;
+}
+ 
+.card-footer {
+  padding: 8px 12px;
+  border-top: 1px solid #ddd;
+}
+ 
+.card-footer a {
+  font-size: 12px;
+  color: #111;
+  text-decoration: none;
+  border-bottom: 1px solid #111;
+}
+ 
+.card-footer a:hover {
+  background: #111;
+  color: #fff;
+}
+ 
+.hidden {
+  display: none;
+}
+ 
+/*  Detail page  */
+.back-link {
+  font-size: 12px;
+  color: #111;
+  text-decoration: none;
+  border-bottom: 1px solid #111;
+  display: inline-block;
+  margin-bottom: 24px;
+}
+ 
+.back-link:hover {
+  background: #111;
+  color: #fff;
+}
+ 
+.detail-header {
+  display: flex;
+  gap: 0;
+  border: 1px solid #aaa;
+  background: #fff;
+  margin-bottom: 24px;
+}
+ 
+.detail-header img {
+  width: 300px;
+  height: 360px;
+  object-fit: cover;
+  object-position: top;
+  border-right: 1px solid #aaa;
+  flex-shrink: 0;
+  display: block;
+}
+ 
+.detail-info {
+  padding: 24px;
+  flex: 1;
+}
+ 
+.detail-info h1 {
+  font-size: 24px;
+  margin-bottom: 6px;
+}
+ 
+.role-badge {
+  display: inline-block;
+  font-size: 11px;
+  background: #111;
+  color: #fff;
+  padding: 2px 8px;
+  margin-bottom: 16px;
+}
+ 
+.meta-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+ 
+.meta-table td {
+  padding: 6px 8px;
+  border: 1px solid #ddd;
+  vertical-align: top;
+}
+ 
+.meta-table td:first-child {
+  font-weight: bold;
+  background: #f0f0f0;
+  width: 130px;
+}
+ 
+/*  Sections (detail + about) ─ */
+.section {
+  margin-bottom: 24px;
+}
+ 
+.section h2 {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 6px;
+  margin-bottom: 12px;
+}
+ 
+.section p {
+  font-size: 13px;
+  color: #333;
+  line-height: 1.8;
+  margin-bottom: 10px;
+}
+ 
+.section ul {
+  font-size: 13px;
+  color: #333;
+  line-height: 1.7;
+  padding-left: 18px;
+}
+ 
+.section ul li {
+  margin-bottom: 4px;
+}
+ 
+/*  About image  */
+.about-img {
+  width: 100%;
+  max-height: 240px;
+  object-fit: cover;
+  object-position: center 20%;
+  border: 1px solid #aaa;
+  display: block;
+  margin-bottom: 24px;
+}
+ 
+.page-subtitle {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 14px;
+}
+ 
+/*  Form  */
+.notice {
+  background: #fff;
+  border: 1px solid #aaa;
+  padding: 12px 14px;
+  font-size: 12px;
+  color: #555;
+  margin-bottom: 24px;
+}
+ 
+.form-group {
+  margin-bottom: 18px;
+}
+ 
+.form-group label {
+  display: block;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+}
+ 
+.required {
+  color: #cc0000;
+}
+ 
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  font-size: 13px;
+  padding: 8px 10px;
+  border: 1px solid #999;
+  background: #fff;
+  color: #111;
+}
+ 
+.form-group textarea {
+  resize: vertical;
+  min-height: 90px;
+}
+ 
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: 2px solid #111;
+  outline-offset: 0;
+}
+ 
+.form-note {
+  font-size: 11px;
+  color: #777;
+  margin-top: 4px;
+}
+ 
+.submit-row {
+  margin-top: 28px;
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+}
+ 
+.btn-submit {
+  font-size: 13px;
+  background: #111;
+  color: #fff;
+  border: none;
+  padding: 10px 28px;
+  cursor: pointer;
+}
+ 
+.btn-submit:hover {
+  background: #333;
+}
+ 
+.btn-reset {
+  font-size: 13px;
+  background: #fff;
+  color: #111;
+  border: 1px solid #999;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+ 
+.btn-reset:hover {
+  background: #eee;
+}

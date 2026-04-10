@@ -4,10 +4,7 @@
 
 ## Table of Contents
 
-- [Installation & Setup](#installation--setup)
-- [Running the Application](#running-the-application)
 - [API Endpoints](#api-endpoints)
-- [Demo Video](#demo-video)
 
 ---
 
@@ -241,7 +238,10 @@ GET /api/characters/search?name={name}
 ```
 
 ---
+## WEB UI Routes
 
-## Demo Video
+The application also provides a web interface for user interaction. All web routes use the base URL: 
+`http://localhost:8080/api/characters`
 
-[Assignment03-recording.mov](https://uncg-my.sharepoint.com/:v:/g/personal/tplambert_uncg_edu/IQAA9GFxJ073RpiPmQ1VmtP5AUsDTjf-GoUDF1U8HX-3pC0?e=UDKcGG&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+## Video link:
+https://uncg-my.sharepoint.com/:v:/g/personal/tplambert_uncg_edu/IQCYK15Cf-0wQ5UmUBE6rrASAYouQ8lEdOspLAuNK7vWc40?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=1SmEEe
