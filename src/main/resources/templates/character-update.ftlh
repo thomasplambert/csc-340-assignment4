@@ -47,11 +47,6 @@
     </div>
 
     <div class="form-group">
-      <label for="species">Species</label>
-      <input type="text" id="species" name="species" value="${character.species!''}" />
-    </div>
-
-    <div class="form-group">
       <label for="age">Age</label>
       <input type="number" id="age" name="age" step="any" required value="${character.age!''}" />
     </div>
