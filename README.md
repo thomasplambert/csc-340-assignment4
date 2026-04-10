@@ -241,7 +241,7 @@ GET /api/characters/search?name={name}
 ## WEB UI Routes
 
 The application also provides a web interface for user interaction. All web routes use the base URL: 
-`http://localhost:8080/api/characters`
+`http://localhost:8080/characters`
 
 ## Video link:
 https://uncg-my.sharepoint.com/:v:/g/personal/tplambert_uncg_edu/IQCYK15Cf-0wQ5UmUBE6rrASAYouQ8lEdOspLAuNK7vWc40?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=1SmEEe
