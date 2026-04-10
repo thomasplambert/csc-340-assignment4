@@ -64,6 +64,14 @@ public class CharacterUiController {
         return "character-list";
     }
 
+    @GetMapping("/updateForm/{id}")
+    public String showUpdateForm(@PathVariable Long id, Model model) {
+        Character character = characterService.getCharacterById(id);
+        model.addAttribute("character", character);
+        model.addAttribute("title", "Update Character: " + id);
+        return "character-update";
+    }
+
     @GetMapping("/delete/{id}")
     public String deleteCharacter(@PathVariable Long id){
         characterService.deleteCharacter(id);
@@ -76,14 +84,13 @@ public class CharacterUiController {
         model.addAttribute("character", new Character());
         model.addAttribute("title", "Add New Character");
         
-        return "character-form";
+        return "character-create";
     }
 
     @PostMapping("/")
     public String addCharacter(Character character, MultipartFile picture){
         Character newCharacter = characterService.createCharacter(character);
         if (newCharacter != null){
-            //add picture handler in service
             return "redirect:/characters/" + newCharacter.getCharacterId();
         } else {
             return "redirect:/characters/add/?error=true";
@@ -94,12 +101,15 @@ public class CharacterUiController {
     public String updateCharacter(@PathVariable Long id, Character updatedCharacter, MultipartFile picture){
         Character character = characterService.updateCharacter(id, updatedCharacter);
         if (character!=null){
-            //add picture handler in service!!
             return "redirect:/characters/" + character.getCharacterId();
         }
         else {
             return "redirect:/characters/update/" + id + "?error=true";
         }
+    }
+    @GetMapping("/about")
+    public String about() {
+        return "about";
     }
 
 }
